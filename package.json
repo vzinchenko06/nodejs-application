@@ -1,0 +1,46 @@
+{
+  "name": "nodejs-application",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Node.js Application",
+  "author": "Volodymyr Zinchenko <vl.zinchenko@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon",
+    "debug": "nodemon --inspect",
+    "test": "jest",
+    "lint": "eslint . --ext .js --cache --fix",
+    "pretty": "prettier \"**/*\" --write --ignore-unknown",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "fastify": "^3.19.2",
+    "fastify-cors": "^6.0.2",
+    "fastify-helmet": "^5.3.2",
+    "jsonwebtoken": "^8.5.1",
+    "ws": "^8.0.0"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^2.0.3",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^14.17.6",
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.1",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=14.0"
+  },
+  "lint-staged": {
+    "*.{js}": "eslint --cache --fix",
+    "*.{js,json,css,md}": "prettier --write"
+  }
+}
