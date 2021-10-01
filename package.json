@@ -2,7 +2,7 @@
   "name": "nodejs-application",
   "version": "0.1.0",
   "private": true,
-  "description": "Node.js Application",
+  "description": "Node.js application server",
   "author": "Volodymyr Zinchenko <vl.zinchenko@gmail.com>",
   "license": "MIT",
   "scripts": {
